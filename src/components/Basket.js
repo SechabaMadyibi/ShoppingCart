@@ -10,6 +10,7 @@ export default function Basket(props) {
     <aside className="block col-1">
       <h2>Cart Items</h2>
       <div>
+        {/* if cartItems length is 0 then render div */}
         {cartItems.length === 0 && <div>Cart is empty</div>}
         {cartItems.map((item) => (
           <div key={item.id} className="row">
