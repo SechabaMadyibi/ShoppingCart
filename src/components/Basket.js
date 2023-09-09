@@ -21,7 +21,7 @@ export default function Basket(props) {
               </button>{' '}
               <button onClick={() => onAdd(item)} className="add">
                 +
-              </button>
+              </button> 
             </div>
 
             <div className="col-2 text-right">

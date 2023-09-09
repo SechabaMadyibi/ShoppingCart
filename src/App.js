@@ -26,7 +26,7 @@ function App() {
           x.id === product.id ? { ...exist, qty: exist.qty + 1 } : x
         )
       );
-      //if product doesnt exist add cartItems and make qty = 1
+      //if product doesnt exist already add product to cartItems and make qty = 1
     } else {
       setCartItems([...cartItems, { ...product, qty: 1 }]);
     }
